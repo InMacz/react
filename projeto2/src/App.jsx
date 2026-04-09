@@ -1,9 +1,11 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import './App.css'
 
-function MyButton(){
+function MyButton({count, onClick}){
+  
+
   return(
-    <button className='botao'>Eu sou um botao</button>
+    <button className='botao' onClick={onClick}>Eu sou um botao Clicado {count} vezes</button>
   );
 }
 
@@ -60,12 +62,26 @@ return(
 
 
 function App() {
+
+const [count, setCount] = useState(0);
+  function handleClick(){
+    setCount(count + 1);
+    //alert('Você clicou no botão!');
+    
+  }
+
+  const [clique, setClique] = useState(0);
+  function toClicando(){
+    setClique(clique + 2);
+  }
+
   
   return (
    <div>
     <h1>Bem Vindo!</h1>
     <SobrePagina/>
-    <MyButton/>
+    <MyButton count={count} onClick={handleClick}/>
+    <MyButton count={clique} onClick={toClicando}/>
     <Profile/>
     <ShoppingList/>
    </div>
