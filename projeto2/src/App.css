@@ -1,0 +1,22 @@
+.sobre{
+  color: aquamarine;
+}
+
+*{
+  background-color: rgb(112, 111, 111);
+}
+
+.botao{
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 200);
+  border: 5px;
+  border-radius: 15px;
+}
+
+.botao:hover{
+  background-color: rgb(180, 18, 159);
+}
+
+.avatar{
+  border-radius: 50%;
+}
