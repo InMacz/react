@@ -3,7 +3,7 @@
 }
 
 *{
-  background-color: rgb(240, 243, 55);
+  background-color: rgb(159, 119, 250);
 }
 
 .botao{
@@ -14,7 +14,8 @@
 }
 
 .botao:hover{
-  background-color: rgb(180, 18, 159);
+  background-color: rgb(251, 255, 2);
+  color: rgb(225, 0, 255)
 }
 
 .avatar{

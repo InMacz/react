@@ -72,7 +72,7 @@ const [count, setCount] = useState(0);
 
   const [clique, setClique] = useState(0);
   function toClicando(){
-    setClique(clique + 2);
+    setClique(clique + 1);
   }
 
   
@@ -81,7 +81,7 @@ const [count, setCount] = useState(0);
     <h1>Bem Vindo!</h1>
     <SobrePagina/>
     <MyButton count={count} onClick={handleClick}/>
-    <MyButton count={clique} onClick={toClicando}/>
+    <MyButton count={count} onClick={handleClick}/>
     <Profile/>
     <ShoppingList/>
    </div>
